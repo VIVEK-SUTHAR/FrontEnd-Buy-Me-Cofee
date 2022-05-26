@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 import abi from '../utils/BuyMeACoffee.json';
 export default function Home() {
   // Contract Address & ABI
-  const contractAddress=CONTRACTADDRESS;
+  const contractAddress=CONTRACTADDRESS || "0xcF6465aFc2A52a52c012C9b042c5E997052E95a8";
   const contractABI = abi.abi;
 
   // Component state
@@ -195,6 +195,7 @@ export default function Home() {
         buyMeACoffee.off("NewMemo", onNewMemo);
       }
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -299,7 +300,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Created by @theviveksuthar for Alchemy's Road to Web3 lesson two!
+          Created by @theviveksuthar for Alchemy Road to Web3 lesson two!
         </a>
       </footer>
     </div>
