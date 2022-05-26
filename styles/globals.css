@@ -1,0 +1,123 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #8360c3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2ebf91, #8360c3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2ebf91, #8360c3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: all 0.2s ease-in-out;
+
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  margin: 4rem 0;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5af19, #f12711);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: all 0.2s ease-in-out;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f12711;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  margin: 1.5rem 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 15px;
+  justify-content: space-around;
+  padding: 2rem;
+  height: max-content;
+}
+
+form label {
+  font-size: 1.4rem;
+  color: aliceblue;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 130%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.submit {
+  margin: 20px 0;
+}
+
+.memoReceivedCard {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 10px 0;
+  min-width: 50%;
+  padding: 20px;
+  color: aliceblue;
+}
+
+
+.memoReceivedCard .msg {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.from {
+  font-size: 1.10rem;
+}
+
+@media (max-width:688px) {
+  .memoReceivedCard {
+    min-width: 100%;
+    padding: 15px;
+  }
+}
